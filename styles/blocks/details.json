@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Style 1",
+	"slug": "custom-details",
+	"blockTypes": ["core/details"],
+	"styles": {
+		"css": "& summary { padding: 15px 15px 15px 20px; background: var(--wp--preset--color--tertiary); font-weight: bold; border-radius: 10px;} & summary:hover{background: var(--wp--preset--color--secondary); color:var(--wp--preset--color--default)} & summary::marker { content: '\\002B  ';  } &[open] summary::marker{content: '\\2212  ';} &[open] summary{background: var(--wp--preset--color--secondary); color:var(--wp--preset--color--default)}"
+	}
+}
