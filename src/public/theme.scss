@@ -1,0 +1,27 @@
+@import '../_global';
+
+// Absolute Header
+body {
+    &:not(.admin-bar) {
+        #{$themePrefix} {
+            &-header {
+                #{$varPrefix}-t: 0;
+            }
+        }
+    }
+}
+
+//Theme CSS
+
+#{$themePrefix} {
+
+    //Absolute Header
+    &-header {
+        #{$varPrefix}-pos: absolute;
+        #{$varPrefix}-t: var(--wp-admin--admin-bar--height);
+        #{$varPrefix}-l: 0;
+        #{$varPrefix}-r: 0;
+        #{$varPrefix}-z-idx: 9;
+    }
+
+}
